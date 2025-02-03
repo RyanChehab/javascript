@@ -7,3 +7,15 @@ function reverse(str){
 }
 
 console.log(reverse("helloo"))
+
+// recursion
+function rev(str){
+
+    if(str.length <= 1){
+        return str
+    }
+
+    return str[str.length -1] + rev(str.slice(0, -1))
+}
+
+console.log(rev('hellooo'))
