@@ -19,3 +19,7 @@ function rev(str){
 }
 
 console.log(rev('hellooo'))
+
+function reverseStandard(str){
+    return str.split("").reverse().join('')
+}
