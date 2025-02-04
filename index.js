@@ -1,23 +1,9 @@
-function freq(arr){
+let myset = new Set
+myset.add(1)
+myset.add(7)
+myset.add(1)
 
-    let count = new Map()
-    
-    for (let element of arr){
-        count.set(element, (count.get(element)|| 0 ) + 1)
-    }
-    let current=0
-    let max=0
-
-    for (let element of arr){
-        let max = count.get(element);
-
-        if(max < current){
-            max = current
-        }
-
-    }
-
-    return max
+if(myset.has(2) == true){
+    console.log('idc')
 }
-
-console.log(freq([2,3,1,4,4,5,7]))
+console.log(myset)
